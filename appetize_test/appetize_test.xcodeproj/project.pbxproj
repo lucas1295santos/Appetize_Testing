@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA05C80123D6756400C50457 /* appetize_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA05C80023D6756400C50457 /* appetize_testTests.swift */; };
 		EA78F5D223D669CA0041D8C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78F5D123D669CA0041D8C8 /* AppDelegate.swift */; };
 		EA78F5D423D669CA0041D8C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78F5D323D669CA0041D8C8 /* SceneDelegate.swift */; };
 		EA78F5D623D669CA0041D8C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78F5D523D669CA0041D8C8 /* ContentView.swift */; };
@@ -15,7 +16,20 @@
 		EA78F5DE23D669CA0041D8C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA78F5DC23D669CA0041D8C8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EA05C80323D6756400C50457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA78F5C623D669CA0041D8C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA78F5CD23D669CA0041D8C8;
+			remoteInfo = appetize_test;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		EA05C7FE23D6756400C50457 /* appetize_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appetize_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA05C80023D6756400C50457 /* appetize_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appetize_testTests.swift; sourceTree = "<group>"; };
+		EA05C80223D6756400C50457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA78F5CE23D669CA0041D8C8 /* appetize_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appetize_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA78F5D123D669CA0041D8C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA78F5D323D669CA0041D8C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EA05C7FB23D6756400C50457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA78F5CB23D669CA0041D8C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA05C7FF23D6756400C50457 /* appetize_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA05C80023D6756400C50457 /* appetize_testTests.swift */,
+				EA05C80223D6756400C50457 /* Info.plist */,
+			);
+			path = appetize_testTests;
+			sourceTree = "<group>";
+		};
 		EA78F5C523D669CA0041D8C8 = {
 			isa = PBXGroup;
 			children = (
 				EA78F5D023D669CA0041D8C8 /* appetize_test */,
+				EA05C7FF23D6756400C50457 /* appetize_testTests */,
 				EA78F5CF23D669CA0041D8C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				EA78F5CE23D669CA0041D8C8 /* appetize_test.app */,
+				EA05C7FE23D6756400C50457 /* appetize_testTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +110,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EA05C7FD23D6756400C50457 /* appetize_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA05C80723D6756400C50457 /* Build configuration list for PBXNativeTarget "appetize_testTests" */;
+			buildPhases = (
+				EA05C7FA23D6756400C50457 /* Sources */,
+				EA05C7FB23D6756400C50457 /* Frameworks */,
+				EA05C7FC23D6756400C50457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA05C80423D6756400C50457 /* PBXTargetDependency */,
+			);
+			name = appetize_testTests;
+			productName = appetize_testTests;
+			productReference = EA05C7FE23D6756400C50457 /* appetize_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EA78F5CD23D669CA0041D8C8 /* appetize_test */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA78F5E223D669CA0041D8C8 /* Build configuration list for PBXNativeTarget "appetize_test" */;
@@ -105,6 +155,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Lucas Oliveira";
 				TargetAttributes = {
+					EA05C7FD23D6756400C50457 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = EA78F5CD23D669CA0041D8C8;
+					};
 					EA78F5CD23D669CA0041D8C8 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -124,11 +178,19 @@
 			projectRoot = "";
 			targets = (
 				EA78F5CD23D669CA0041D8C8 /* appetize_test */,
+				EA05C7FD23D6756400C50457 /* appetize_testTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EA05C7FC23D6756400C50457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA78F5CC23D669CA0041D8C8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +204,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EA05C7FA23D6756400C50457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA05C80123D6756400C50457 /* appetize_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA78F5CA23D669CA0041D8C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +223,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA05C80423D6756400C50457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA78F5CD23D669CA0041D8C8 /* appetize_test */;
+			targetProxy = EA05C80323D6756400C50457 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EA78F5DC23D669CA0041D8C8 /* LaunchScreen.storyboard */ = {
@@ -166,6 +244,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EA05C80523D6756400C50457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TXN395LVS;
+				INFOPLIST_FILE = appetize_testTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas.dos.appetize-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appetize_test.app/appetize_test";
+			};
+			name = Debug;
+		};
+		EA05C80623D6756400C50457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TXN395LVS;
+				INFOPLIST_FILE = appetize_testTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas.dos.appetize-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appetize_test.app/appetize_test";
+			};
+			name = Release;
+		};
 		EA78F5E023D669CA0041D8C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -323,6 +441,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EA05C80723D6756400C50457 /* Build configuration list for PBXNativeTarget "appetize_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA05C80523D6756400C50457 /* Debug */,
+				EA05C80623D6756400C50457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EA78F5C923D669CA0041D8C8 /* Build configuration list for PBXProject "appetize_test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
