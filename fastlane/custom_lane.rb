@@ -1,3 +1,3 @@
 lane :custom_lane do
-    print 'custom lane very top'
+    sh("python3 python_scripts/print.py")
 end

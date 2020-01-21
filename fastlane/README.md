@@ -28,7 +28,7 @@ fastlane custom_lane
 ```
 fastlane ios custom_lane
 ```
-Description of what the lane does
+My test lane
 
 ----
 
