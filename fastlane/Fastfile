@@ -16,11 +16,11 @@
 import './custom_lane.rb'
 
 setup_travis
-
+scan(devices: ["iPhone 11"])
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
+  desc "My test lane"
   lane :custom_lane do
     custom_lane
   end
