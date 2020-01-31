@@ -31,7 +31,7 @@ lane :new_pull_request do |options|
   base = options[:base]
   changelog = fetch_git_changelog(head, base)
   create_pull_request(
-    api_token: ENV['GITHUB_API_TOKEN'],
+    api_token: ENV['DANGER_GITHUB_API_TOKEN'],
     repo: 'lucas1295santos/Appetize_Testing',
     title: "#{head} -> #{base}",
     head: head,
