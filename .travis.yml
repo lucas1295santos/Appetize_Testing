@@ -13,3 +13,4 @@ install:
   - bundle install
 script:
   - fastlane custom_lane
+  - bundle exec danger
