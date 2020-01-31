@@ -15,5 +15,6 @@ result = Fastlane::OneOff.run(action: "build_and_upload_to_appetize",
 device_grid.run(
   public_key: result,
   languages: ["en"],
-  devices: ["iphone5s", "iphone6splus"]
+  devices: ["iphone5s", "iphone6splus"],
+  osVersion:["13.3"]
 )
