@@ -1,10 +1,11 @@
-puts("Running fastlane to generate and upload an ipa file...")
+TOKEN=ENV['APPETIZE_TOKEN']
 
 options = {
   xcodebuild: {
-      workspace: "appetize_test/appetize_test.xcodeproj",
+      workspace: "appetize_test.xcworkspace",
       scheme: "appetize_test"
-    }
+    },
+    api_token: TOKEN
 }
 
 require 'fastlane'
