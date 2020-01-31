@@ -1,10 +1,11 @@
-DANGER_GITHUB_API_TOKEN=ENV['DANGER_GITHUB_API_TOKEN']
-api_token=DANGER_GITHUB_API_TOKEN
+TOKEN=ENV['APPETIZE_TOKEN']
+
 options = {
   xcodebuild: {
       workspace: "appetize_test.xcworkspace",
       scheme: "appetize_test"
-    }
+    },
+    api_token: TOKEN
 }
 
 require 'fastlane'
