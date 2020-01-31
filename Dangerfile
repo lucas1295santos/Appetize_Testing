@@ -1,4 +1,4 @@
-puts("Running fastlane to generate and upload an ipa file...")
+message("Running fastlane to generate and upload an ipa file...")
 
 options = {
   xcodebuild: {

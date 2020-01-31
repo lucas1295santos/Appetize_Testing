@@ -16,7 +16,7 @@
 import './custom_lane.rb'
 
 setup_travis
-scan(devices: ["iPhone 11"])
+#scan(devices: ["iPhone 11"])
 default_platform(:ios)
 
 platform :ios do
@@ -24,4 +24,18 @@ platform :ios do
   lane :custom_lane do
     custom_lane
   end
+end
+
+lane :new_pull_request do |options|
+  head = options[:head]
+  base = options[:base]
+  changelog = fetch_git_changelog(head, base)
+  create_pull_request(
+    api_token: ENV['GITHUB_API_TOKEN'],
+    repo: 'lucas1295santos/Appetize_Testing',
+    title: "#{head} -> #{base}",
+    head: head,
+    base: base,
+    body: changelog
+  )
 end
