@@ -1,6 +1,6 @@
 message("Running fastlane to generate and upload an ipa file...")
 
-export DANGER_GITHUB_API_TOKEN=ENV['DANGER_GITHUB_API_TOKEN']
+# export DANGER_GITHUB_API_TOKEN=ENV['DANGER_GITHUB_API_TOKEN']
 
 options = {
   xcodebuild: {
