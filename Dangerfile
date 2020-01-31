@@ -2,7 +2,7 @@ puts("Running fastlane to generate and upload an ipa file...")
 
 options = {
   xcodebuild: {
-      workspace: "appetize_test/appetize_test.xcodeproj",
+      workspace: "appetize_test.xcworkspace",
       scheme: "appetize_test"
     }
 }
